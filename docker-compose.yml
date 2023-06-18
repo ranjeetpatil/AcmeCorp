@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  acmecorp:
+    image: ${DOCKER_REGISTRY-}acmecorp
+    build:
+      context: .
+      dockerfile: AcmeCorp/Dockerfile

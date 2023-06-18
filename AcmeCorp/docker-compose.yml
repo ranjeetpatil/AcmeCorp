@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  acmecorpapp:
+    image: acmecorpapp
+    build:
+      context: .
+      dockerfile: AcmeCorp/Dockerfile
+    ports:
+        - "3500:80"
